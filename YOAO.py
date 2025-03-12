@@ -1,4 +1,4 @@
-# 改进deepfool
+﻿# 改进deepfool
 import numpy as np
 from torch.autograd import Variable
 import torch as torch
@@ -46,7 +46,10 @@ def YOAO(image, net, num_classes, overshoot, max_iter,margin_factor=0):
         pert = np.inf
         fs[0, I[0]].backward(retain_graph=True)
 #     对正确标签执行反向传播
-        grad_orig = x.grad.data.cpu().numpy().copy()    
+        grad_orig = x.grad.data.cpu().numpy().copy()
+
+        
+                
 #     获得当前标签梯度
         w_k = max_grad_val - grad_orig
 #     当前类别和正确类别之间的梯度差
@@ -79,10 +82,6 @@ def YOAO(image, net, num_classes, overshoot, max_iter,margin_factor=0):
     k_i = np.argmax(fs.data.cpu().numpy().flatten())
 #     计算更新后图像的预测类别
     return r_tot, loop_i, label, k_i, pert_image
-
-
-
-
 
 
 
