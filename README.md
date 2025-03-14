@@ -9,3 +9,4 @@ Alternatively, if you do not have a custom-trained model, you can use publicly a
 Whether you're a researcher looking to test the vulnerability of a new model or a developer seeking to improve the security of an existing system, this code serves as a powerful tool. It not only demonstrates the effectiveness of the DeepFool and YOAO algorithms but also provides a foundation for further exploration and development in the field of adversarial machine learning.
 
 So, embark on this journey of enhancing your models' resilience against adversarial attacks by replacing the weight file and witnessing the algorithms in action. It's a step towards building more robust and secure AI systems that can stand up to the sophisticated challenges of today's digital landscape.
+RESNET_cifar10_3.pth  url：  https://wwcv.lanzn.com/iotM72qjg93g
