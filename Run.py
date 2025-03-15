@@ -1,4 +1,4 @@
-
+﻿
 import time
 import torchvision.transforms as transforms
 import numpy as np
@@ -34,7 +34,7 @@ def run_attack(attack_type,image, net, num_classes, overshoot, max_iter):
     return r, loop_i, label_orig, label_pert, pert_image
 
 max_iter = 1
-overshoot = 1
+overshoot = 0.02
 num_classes=10
 mean = [ 0.485, 0.456, 0.406 ]
 std = [ 0.229, 0.224, 0.225 ]
